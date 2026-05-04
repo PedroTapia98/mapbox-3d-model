@@ -49,7 +49,7 @@ map.on('style.load', () => {
 
             const loader = new THREE.GLTFLoader();
 
-            loader.load('EO.glb', (gltf) => {
+            loader.load('./EO.glb', (gltf) => {
                 console.log('MODELO CARGADO');
                 this.scene.add(gltf.scene);
             });
